@@ -24,10 +24,10 @@ public class IntsCalculator implements Ints {
     }
 
     @Override
-    public int pow(int arg0, int arg1) {
+    public int pow(int a, int b) {
         return (int) this.target.newFormula()
-                .addOperand(arg0)
-                .addOperand(arg1)
+                .addOperand(a)
+                .addOperand(b)
                 .calculate(Calculator.Operation.POW)
                 .result();
     }
